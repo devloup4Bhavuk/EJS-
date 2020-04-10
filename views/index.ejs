@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO-DO-List</title>
+    <link rel="stylesheet" href="styles.css">
+    
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Do+Hyeon|Fredoka+One|Gotu&display=swap" rel="stylesheet">
+</head>
+</head>
+<body style="overflow: hidden;">
+    <div class="par-div">
+        <div class="child-div">
+                <img src="images/abc.svg" width="80" height="80" alt="logo">
+                <h1 class="div-h1">YOUR OWN TO-DO LIST</h1>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="body-child1">
+            <img src="images/to do background.svg" width="54%" height="67%" alt="">
+        </div>
+
+        <div class="body-child2">
+            <div class="input-itm">
+                <h2 id="text">YOUR LIST</h2>
+                <% for(var i=0;i<newlistitem.length;i++){ %>
+                    <p class="li-itm"> <%= newlistitem[i] %></p>
+                <% } %>
+            </div>
+            
+            <form class="form" action="/" method="POST" style="width: 80%;margin: 0 auto;">
+                <input type="text" name="newitem" placeholder="Enter Item" autocomplete="off">
+                <button type="submit" class="btn">+</button>
+
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

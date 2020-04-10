@@ -1,0 +1,137 @@
+/* font-family: 'Gotu', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Fredoka One', cursive; HEADING */
+
+
+body{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    /* pointer-events: none; */
+}
+
+.par-div{
+    background-color: #6C63FF;
+    height:100px;
+    position: relative;
+    padding: 10px 30px;
+}
+.child-div{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.child-div{
+    text-align: center;
+    word-spacing: 1px;
+    background-color: #fff;
+    width: 90%; 
+    height: 70px; 
+    position: absolute;
+    padding: 0px 4%;
+    border-radius: 50px;
+    font-family: 'Gotu', sans-serif;
+}
+.div-h1{
+
+    font-family: 'Gotu', sans-serif;
+    padding-left: 10px;
+}
+@media screen and (max-width: 800px){
+    .div-h1,.body-child1{
+        display: none;
+    }
+}
+/* #6C63FF */
+.body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.body-child1{
+    position: absolute;
+    left: 0px;
+    top: 25%;
+}
+
+.body-child2{
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 59%;
+    height: 88%; 
+}
+.input-itm{
+    padding: 0px;
+    overflow: auto;
+    height: 500px;
+    width: 80%;
+    margin: 3% auto 0px;
+    
+}
+
+
+.li-itm,input[type="text"]{
+    width: 55%;
+    /* height: 100px; */
+    margin: 0px auto 10px;
+    font-size: 2rem; 
+    padding: 10px;
+    border: 2px solid #707070;
+    border-radius: 59px;
+    overflow: hidden;
+    
+}
+#text{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 4rem;
+    letter-spacing:5px;
+    color: #6C63FF;
+    
+}
+input[type="text"]{
+    border-width: 0px 0px 2px 0px;
+    border-radius: 0;
+    width: 45%;
+    outline: none;
+    pointer-events: auto;
+}
+input[type="text"]:focus{
+    border-bottom-color: #6C63FF;
+    font-family: 'Gotu', sans-serif;
+    font-size: 1.5rem;
+}
+input[type="text"]:focus ~ .btn{
+    background-color: #6C63FF;
+    color: #fff;
+}
+::placeholder{
+    text-align: center;
+}
+.btn{
+    font-size: 2.5rem;
+    width: 50px;
+    border-radius: 100px;
+    box-shadow: none;
+    outline: none;
+    border-width: 0px;
+    background-color: #fff;
+    color: #707070;
+    pointer-events: auto;
+}
+.btn:hover{
+    background-color: #6C63FF;
+    color: #fff;
+}
+@media screen and (max-width:1250px){
+    .body-child1{
+        display: none;
+    }
+    .body-child2{
+        width: 100%
+    }
+}
